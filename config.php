@@ -3,5 +3,5 @@
     //Se permite asi el acceso a este servicio desde cualquier dominio
 
     
-    $cn = mysqli_connect("localhost","root","","bdnotas");
+    $cn = mysqli_connect("localhost","root","root6","bdnotas");
 ?>
