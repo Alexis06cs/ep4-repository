@@ -1,7 +1,7 @@
 <?php
 $servername = "localhost";
 $username = "root";
-$password = "tu_contraseña"; // Reemplaza esto con tu contraseña real
+$password = "root6"; // Reemplaza esto con tu contraseña real
 $dbname = "bdNotas";
 
 // Intenta establecer la conexión
