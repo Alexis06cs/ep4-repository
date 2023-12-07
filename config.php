@@ -1,11 +1,16 @@
 <?php
-    header("Access-Control-Allow-Origin: *");
+$servername = "localhost";
+$username = "root";
+$password = "tu_contraseña"; // Reemplaza esto con tu contraseña real
+$dbname = "bdNotas";
 
-    // Intenta conectar a la base de datos
-    $cn = mysqli_connect("localhost", "root", "root6", "bdnotas");
+// Intenta establecer la conexión
+$conn = new mysqli($servername, $username, $password, $dbname);
 
-    // Verifica si la conexión fue exitosa
-    if (!$cn) {
-        die("Error de conexión: " . mysqli_connect_error());
-    }
+// Verifica si hay errores
+if ($conn->connect_error) {
+    die("Error de conexión: " . $conn->connect_error);
+}
+
+echo "Conexión exitosa";
 ?>
